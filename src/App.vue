@@ -1,8 +1,9 @@
 <template>
-
   <NavBar />
+    <div class="justify-content-md-center">
   <FormAddTask />
   <TaskList />
+    </div>
   
 
 </template>

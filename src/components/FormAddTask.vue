@@ -1,8 +1,8 @@
 <template>
-  <form class="mt-2 row ">
-      <InputAddTask />
-      <button-add-task />
-  </form>
+    <form class="mt-2 row justify-content-md-center">
+        <InputAddTask />
+        <button-add-task />
+    </form>
 </template>
 
 <script>
@@ -15,7 +15,3 @@ export default {
     }
 }
 </script>
-
-<style>
-
-</style>
