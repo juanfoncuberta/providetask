@@ -3,17 +3,18 @@
       <div 
         class="col-9" 
         v-for="task in taskList" :key="task">
-            <div class="alert alert-warning" role="alert">
-                    {{task}}
-            </div>
+            <Card :task="task" />
       </div>
   </div>
 </template>
 
 <script>
+import Card from './TaskCard'
 import { inject } from 'vue'
 export default {
-
+    components: {
+        Card
+    },    
     setup(){
         
         const taskList = inject('taskList')
