@@ -6,10 +6,10 @@
 </template>
 
 <script>
-import { inject, provide, ref } from 'vue'
+import { inject  } from 'vue'
 export default {
 
-    setup(){
+    setup(){        
         
         const newTask = inject('newTask')
         return {newTask}

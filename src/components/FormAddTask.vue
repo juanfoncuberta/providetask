@@ -13,14 +13,6 @@ export default {
     components:{
         InputAddTask,
         ButtonAddTask
-    },
-
-    setup(){
-        const taskList = ref([])
-        var task = ref('')
-        provide('taskList',taskList)
-        provide('newTask',task)
-
     }
 }
 </script>

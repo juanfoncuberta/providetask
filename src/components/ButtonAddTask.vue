@@ -13,7 +13,7 @@ export default {
         const newTask = inject('newTask')
         
         const addToList = () =>  {
-            taskList.value.push(taskList.value)
+            taskList.value.push(newTask.value)
         }
 
         return {addToList}
