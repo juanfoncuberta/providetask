@@ -1,9 +1,11 @@
 <template>
-   <div class="row">
+   <div class="row d mt-3 d-flex justify-content-center">
       <div 
-        class="col-12"
+        class="col-9" 
         v-for="task in taskList" :key="task">
-            {{task}}
+            <div class="alert alert-warning" role="alert">
+                    {{task}}
+            </div>
       </div>
   </div>
 </template>
