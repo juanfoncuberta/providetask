@@ -1,7 +1,5 @@
 <template>
-    <!-- <div class="justify-content-center col-9"> -->
     <button type="button" class="btn btn-success col-9" @click="addToList">Add</button>
-    <!-- </div> -->
 </template>
 
 <script>
@@ -13,7 +11,10 @@ export default {
         const newTask = inject('newTask')
         
         const addToList = () =>  {
-            taskList.value.push(newTask.value)
+            if(newTask.value)
+                taskList.value.push(newTask.value)
+
+            newTask.value = ''
         }
 
         return {addToList}

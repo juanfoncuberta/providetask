@@ -2,8 +2,8 @@
    <div class="row d mt-3 d-flex justify-content-center">
       <div 
         class="col-9" 
-        v-for="task in taskList" :key="task">
-            <Card :task="task" />
+        v-for="(task,index) in taskList">
+            <Card :task="task" :index="index" />
       </div>
   </div>
 </template>
