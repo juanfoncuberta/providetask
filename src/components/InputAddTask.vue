@@ -12,6 +12,8 @@ export default {
     setup(){        
         
         const newTask = inject('newTask')
+        
+
         return {newTask}
     }
 }

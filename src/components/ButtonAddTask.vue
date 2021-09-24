@@ -12,8 +12,17 @@ export default {
         
         const addToList = () =>  {
             if(newTask.value)
-                taskList.value.push(newTask.value)
-
+                console.log("ntvalue")
+                console.log(newTask.value)
+                var task = {
+                    "id": taskList.value.length,
+                    "name":newTask.value,
+                    "done": 0
+                }
+                console.log("task")
+                console.log(task);
+                taskList.value.push(task)
+                console.log(taskList.value.length)
             newTask.value = ''
         }
 
