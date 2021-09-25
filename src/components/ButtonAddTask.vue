@@ -11,19 +11,16 @@ export default {
         const newTask = inject('newTask')
         
         const addToList = () =>  {
-            if(newTask.value)
-                console.log("ntvalue")
-                console.log(newTask.value)
+            if(newTask.value){
+
                 var task = {
                     "id": taskList.value.length,
                     "name":newTask.value,
                     "done": 0
                 }
-                console.log("task")
-                console.log(task);
                 taskList.value.push(task)
-                console.log(taskList.value.length)
-            newTask.value = ''
+                newTask.value = ''
+            }
         }
 
         return {addToList}

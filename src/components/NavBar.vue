@@ -12,4 +12,4 @@ export default {
 
 <style>
 
-</style> navbar
+</style> 
