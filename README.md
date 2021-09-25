@@ -1,5 +1,12 @@
 # provide-task
 
+
+Project to refresh provide concepts with vue. 
+
+The app is a simple application to add and delete tasks.
+
+
+
 ## Project setup
 ```
 npm install
